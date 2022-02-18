@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-color: #78bbcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: repeat(6,100px);
+}
+
+.grid img {
+    max-inline-size: 100%;
+    box-sizing: border-box;
+}
+
+.boca {
+    grid-column-start: 5;
+    grid-row-start: 4;
+    /* border: 5px solid crimson; */
+}
+
+.campana {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    /* border: 5px solid aqua; */
+}
+
+.persona {        
+    grid-row-start: 2;
+    grid-column: 3 / span 2;
+    /* border: 5px solid yellowgreen; */
+}
+
+.gusano {
+    /* border: 5px solid yellow; */
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+.reloj {
+    /* border: 5px solid salmon; */
+    grid-column-start: 2;
+    grid-row-start: 4;
+    
+}
+
+.tostadora {
+    /* border: 5px solid violet; */
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
